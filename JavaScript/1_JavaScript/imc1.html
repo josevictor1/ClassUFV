@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <label>Input <input id="input"/> </label><br/>
+  <button id="botao">print</button>
+  <div id="resultado">
+  </div>
+  <script>
+    document.querySelector('#botao').addEventListener('click', function () {
+      var input = document.querySelector('#input').value;
+      var output = document.createElement('span');
+      output.textContent = input;
+      var result = document.querySelector('#resultado');
+      result.appendChild(output);
+    });
+  </script>
+</body>
